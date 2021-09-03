@@ -1,7 +1,11 @@
 import { Button, Col, Row } from "antd";
 import Link from "next/link";
 import Image from "next/image";
-import { QuestionCircleOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import {
+  QuestionCircleOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
+import HeaderSearch from "../search/header";
 
 export default function Nav() {
   return (
@@ -21,20 +25,18 @@ export default function Nav() {
               size="large"
               className="text-blue-800 mx-auto"
             >
-              <span className="font-bold">
-              💰 Offers
-              </span>
+              <span className="font-bold">💰 Offers</span>
             </Button>
           </div>
         </Col>
         <Col span={9}>
-
+          <HeaderSearch />
         </Col>
         <Col flex="auto">
           <div className="flex justify-around items-center">
             <Link href="/help">
               <h4 className="font-bold text-md cursor-pointer hover:text-green-600">
-              Need Help?
+                Need Help?
               </h4>
             </Link>
             <Link href="/cart">
