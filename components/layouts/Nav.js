@@ -6,6 +6,7 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import HeaderSearch from "../search/header";
+import ProfileCard from "../cards/profile";
 
 export default function Nav() {
   return (
@@ -42,14 +43,15 @@ export default function Nav() {
             <Link href="/cart">
               <ShoppingCartOutlined className="text-3xl hover:text-green-600" />
             </Link>
-            <Link href="/auth/login">
+            {/* <Link href="/auth/login">
               <Button type="primary" size="large">
                 Login
               </Button>
             </Link>
             <Link href="/auth/signup">
               <Button size="large">Signup</Button>
-            </Link>
+            </Link> */}
+            <ProfileCard/>
           </div>
         </Col>
       </Row>
