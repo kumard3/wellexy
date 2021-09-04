@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import Link from "next/link";
 import React from "react";
+import CartProduct from "../components/cards/cartProduct";
 
 function EmptyCart() {
   return (
@@ -26,7 +27,8 @@ function EmptyCart() {
 export default function Cart() {
   return (
     <div>
-      <EmptyCart />
+      {/* <EmptyCart /> */}
+      <CartProduct/>
     </div>
   );
 }
