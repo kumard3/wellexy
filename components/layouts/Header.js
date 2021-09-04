@@ -10,7 +10,6 @@ export default function Header() {
             Say goodbye to all your healthcare worries with us
           </h4>
         </div>
-        <HeaderSearch />
       </div>
     </div>
   );

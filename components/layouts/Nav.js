@@ -42,10 +42,14 @@ export default function Nav() {
             <Link href="/cart">
               <ShoppingCartOutlined className="text-3xl hover:text-green-600" />
             </Link>
-            <Button type="primary" size="large">
-              Login
-            </Button>
-            <Button size="large">Signup</Button>
+            <Link href="/auth/login">
+              <Button type="primary" size="large">
+                Login
+              </Button>
+            </Link>
+            <Link href="/auth/signup">
+              <Button size="large">Signup</Button>
+            </Link>
           </div>
         </Col>
       </Row>

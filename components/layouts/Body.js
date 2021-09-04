@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AdminDetails from "../cards/adminDetails";
 
 function Body() {
   const linkStyle =
@@ -60,7 +61,9 @@ function Body() {
         </div>
       </div>
 
-      <div>products goes here</div>
+      <div>products goes here
+        <AdminDetails/>
+      </div>
     </div>
   );
 }
